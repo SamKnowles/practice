@@ -48,7 +48,11 @@ Other general concerns
 
 - Does this player tilt? Is this player tilting?
 
-Preflop:
+`}
+
+<text style={{fontWeight: "bold"}}>Pre-Flop: </text>
+
+{`
 
 Limping
 
@@ -90,7 +94,13 @@ Stealing
 
 - Does this player play aggressively preflop against players you are perceiving as having wide/weak preflop ranges?
 
-General Postflop
+
+
+`}
+
+<text style={{fontWeight: "bold"}}>General Post-Flop: </text>
+
+{`
 
 Bluffing
 
@@ -140,7 +150,11 @@ Other considerations
 
 - Does this player play very face up in 3-bet pots?
 
-Flop
+`}
+
+<text style={{fontWeight: "bold"}}>Flop: </text>
+
+{`
 
 Continuation betting
 
@@ -174,7 +188,11 @@ Other flop considerations
 
 - Will this player float in position?
 
-Turn
+`}
+
+<text style={{fontWeight: "bold"}}>Turn: </text>
+
+{`
 
 Continuation bets
 
@@ -190,7 +208,11 @@ Other turn considerations
 
 - Does this player generally continue semibluffs in position? Out of position?
 
-River
+`}
+
+<text style={{fontWeight: "bold"}}>River: </text>
+
+{`
 
 Bluffing
 
