@@ -6,10 +6,12 @@ import Landing from './Landing'
 import PreFlop from './PreFlop'
 import Maths from './Maths'
 import Table from './Table'
+import CallingHands from './CallingHands'
 
 import '../Styles/PreFlop.css';
 import '../Styles/Table.css';
 import '../Styles/Nav.css';
+import '../Styles/CallingHands.css';
 
 function App() {
     return (
@@ -17,7 +19,7 @@ function App() {
         <div className='app-wrapper'>
             <Nav />
             <Switch>
-                <Route exact path='/' component={Table}></Route>
+                <Route exact path='/' component={CallingHands}></Route>
                 <Route path='/landing' compontnet={Landing} ></Route>
                 <Route path='/PreFlop' component={PreFlop}></Route>
                 <Route path='/Maths' component={Maths}></Route>
