@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styles from './card.css';
 
 class Deck extends Component {
   render() {
