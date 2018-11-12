@@ -1,43 +1,64 @@
-import React, { Component } from 'react';
 
-class Deck extends Component {
+import React, { Component } from 'react'
+
+export default class Deck extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      card: {
+        value: '',
+        name: '',
+        suit: '',
+      },
+      cards: []
+    }
+  }
+
+  deck = (e) => {
+    this.names = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    this.suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs'];
+    var card 
+    var cards = [];
+
+    for (var s = 0; s < this.suits.length; s++) {
+      for (var n = 0; n < this.names.length; n++) {
+        cards.push(new card(n + 1, this.names[n], this.suits[s]));
+      }
+    }
+
+    return cards;
+  }
+
   render() {
-    const suitMap = {
-      'S': 'Spades',
-      'H': 'Hearts',
-      'C': 'Clubs',
-      'D': 'Diamonds'
-    };
-
-    const rankMap = {
-      'A': 'Ace',
-      '2': 'Deuce',
-      '3': 'Three',
-      '4': 'Four',
-      '5': 'Five',
-      '6': 'Six',
-      '7': 'Seven',
-      '8': 'Eight',
-      '9': 'Nine',
-      'T': 'Ten',
-      'J': 'Jack',
-      'Q': 'Queen',
-      'K': 'King'
-    };
+    console.log(this.state)
 
     return (
-      <div className="wrapper">
-        <div className="card">
-          <div className={`${this.props.suit} mark dark`}>{this.props.rank}</div>
-          <div className="content ">
-            <h1>{rankMap[this.props.rank]}</h1>
-            <h2><sup>OF</sup><span className="dark">{suitMap[this.props.suit]}</span></h2>
-          </div>
-          <div className={`${this.props.suit} mark upside-down`}>{this.props.rank}</div>
-        </div>
+
+      <div>
+
       </div>
-    );
+    )
   }
 }
 
-export default Deck;
+
+
+// function card(value, name, suit) {
+//   this.value = value;
+//   this.name = name;
+//   this.suit = suit;
+// }
+
+// function deck() {
+//   this.names = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+//   this.suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs'];
+//   var cards = [];
+
+//   for (var s = 0; s < this.suits.length; s++) {
+//       for (var n = 0; n < this.names.length; n++) {
+//           cards.push(new card(n + 1, this.names[n], this.suits[s]));
+//       }
+//   }
+
+//   return cards;
+// }
