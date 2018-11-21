@@ -9,6 +9,7 @@ function Nav() {
             <NavLink className='nav-item' activeClassName="selcted" to='/landing'>Landing</NavLink>
             <NavLink className='nav-item' activeClassName="selcted" to='/preflop'>Pre-Flop</NavLink>
             <NavLink className='nav-item' activeClassName="selcted" to='/maths'>Maths</NavLink>
+            <NavLink className='nav-item' activeClassName="selcted" to='/table'>Table</NavLink>
         </div>
     )
 }

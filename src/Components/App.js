@@ -14,6 +14,7 @@ import '../Styles/Table.css';
 import '../Styles/Nav.css';
 import '../Styles/CallingHands.css';
 import '../Styles/Deck.css';
+import '../Styles/Table.css';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path='/landing' compontnet={Landing} ></Route>
                 <Route path='/PreFlop' component={PreFlop}></Route>
                 <Route path='/Maths' component={Maths}></Route>
+                <Route path='table' component={Table}/>
             </Switch>
         </div>
     )
