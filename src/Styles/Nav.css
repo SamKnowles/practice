@@ -4,7 +4,6 @@
     background-color: #2196F3;
     grid-gap: 5px;    
     padding: 5px;
-    margin-bottom: 5px;
     display: flex;
     justify-content: space-around;
 }

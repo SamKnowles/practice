@@ -23,11 +23,11 @@ function App() {
             <Nav />
             <Switch>
                 <Route exact path='/' component={CallingHands}></Route>
-                <Route path='/deck' component={Deck}></Route>
-                <Route path='/landing' compontnet={Landing} ></Route>
+                <Route path='/Deck' component={Deck}></Route>
+                <Route path='/Landing' compontnet={Landing} ></Route>
                 <Route path='/PreFlop' component={PreFlop}></Route>
                 <Route path='/Maths' component={Maths}></Route>
-                <Route path='table' component={Table}/>
+                <Route path='/Table' component={Table}/>
             </Switch>
         </div>
     )

@@ -1,16 +1,13 @@
-
 .poker-table-wrapper {
-  position: relative;
-  height: 0;
-  padding-bottom: 75%;
-  z-index: 1;
-  }
-  .poker-table {
-    background-image: url('../Pictures/poker-table.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center top;
-    background-attachment: fixed;
-    padding-bottom: 75%
-  }
- 
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.poker-table {
+  background-image: url('../Pictures/poker-table.jpg');
+  background-size: 100%;
+  width: 80%;
+  border: 1px solid red;
+}
