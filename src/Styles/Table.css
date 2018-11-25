@@ -3,6 +3,7 @@
   border: 1px solid black;
   display: flex;
   justify-content: center;
+  background-color: #477148;
 }
 
 .poker-table {
