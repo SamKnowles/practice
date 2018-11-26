@@ -9,6 +9,7 @@ import Table from './Table'
 import CallingHands from './CallingHands'
 import Deck from './Deck'
 
+import '../Styles/App.css';
 import '../Styles/PreFlop.css';
 import '../Styles/Table.css';
 import '../Styles/Nav.css';
