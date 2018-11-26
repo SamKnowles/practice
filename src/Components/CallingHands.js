@@ -1,4 +1,5 @@
 import React from 'react'
+import chart from '../Pictures/calling-hands.jpg'
 
 function CallingHands() {
 
@@ -7,7 +8,7 @@ function CallingHands() {
     const position = ['UTG', 'UTG1', 'UTG2', 'MP1', 'MP2', 'MP3', 'CO', 'BTN', 'SB', 'BB'];
 
     return (
-        <div>
+        <div className='calling-hands-component-wrapper'>
             <div class="calling-hands-container">
                 <div class="calling-hands-info">1</div>
                 <div class="ch-seat-1">UTG</div>
@@ -22,6 +23,9 @@ function CallingHands() {
                 <div class="ch-seat-11">BTN</div>
                 <div class="ch-seat-12">CO</div>
                 <div class="ch-seat-13">MP3</div>
+            </div>
+            <div className='calling-hand-pic-wrapper'>
+                <img className='calling-hands-pic' src={chart} alt=""/>
             </div>
         </div>
     )
