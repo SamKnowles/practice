@@ -8,6 +8,7 @@
 
 .poker-table {
   background-image: url('../Pictures/poker-table.jpg');
+  background-repeat: no-repeat;
   background-size: 100%;
   width: 80%;
   border: 1px solid red;
@@ -31,9 +32,9 @@
   display: grid;
   justify-content: space-between;
   align-content: space-between;
-  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-template-columns: 150px 150px 150px 150px 150px;
   /*Make the grid smaller than the container*/
-  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-rows: 70px 70px 70px 70px;
   grid-gap: 10px;
 }
 
@@ -42,4 +43,25 @@
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}
+
+.player-profile {
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.player-face {
+  border: 1px solid Yellow;
+  height: 100%;
+}
+
+.player-cards {
+  border: 1px ridge hotpink;
+  height: 100%;
+}
+
+.player-chips {
+  border: 1px solid skyblue;
+  height: 100%;  
 }
