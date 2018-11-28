@@ -30,24 +30,22 @@
   height: 60%;
   border: 1px solid black;
   display: grid;
-  justify-content: space-between;
-  align-content: space-between;
-  grid-template-columns: 150px 150px 150px 150px 150px;
+  grid-template-columns: auto auto auto auto auto;
   /*Make the grid smaller than the container*/
-  grid-template-rows: 70px 70px 70px 70px;
+  grid-template-rows: auto auto auto auto;
   grid-gap: 10px;
 }
 
 .seating>div {
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
 }
 
 .player-profile {
   border: 1px solid green;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .player-face {
@@ -63,4 +61,17 @@
 .player-chips {
   border: 1px solid skyblue;
   height: 100%;  
+}
+
+.dealer-button {
+  border: 1px solid orangered;
+  height: 100%;
+}
+
+.mid-section-top {
+  border: 1px solid black;
+}
+
+.mid-section-bottom {
+  border: 1px solid black;  
 }

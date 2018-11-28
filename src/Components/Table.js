@@ -11,59 +11,65 @@ function Table() {
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
                         <div>5</div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
-                        <div>7</div>
-                        <div>8</div>
-                        <div>9</div>
+                        <div className='player-profile mid-section-top'></div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
-                        <div>13</div>
-                        <div>14</div>
-                        <div>15</div>
+                        <div className='mid-section-bottom'></div>                        
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
                         <div>17</div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
                             <div className='player-chips'></div>
+                            <div className='dealer-button'></div>
                         </div>
                     </div>
                 </div>
