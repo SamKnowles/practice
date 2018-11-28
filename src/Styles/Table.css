@@ -72,6 +72,14 @@
   border: 1px solid black;
   grid-column-start: 2;
   grid-column-end: span 3;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 30px);
+  grid-gap: 3px;
+}
+
+.mid-section-top > div{
+  border: 1px solid greenyellow;
 }
 
 .mid-section-bottom {
