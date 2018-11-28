@@ -70,8 +70,12 @@
 
 .mid-section-top {
   border: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: span 3;
 }
 
 .mid-section-bottom {
   border: 1px solid black;  
+  grid-column-start: 2;
+  grid-column-end: span 3;
 }
