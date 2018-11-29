@@ -72,6 +72,13 @@
   border: 1px solid black;
   grid-column-start: 2;
   grid-column-end: span 3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-wrapper {
+  border: 1px solid crimson; 
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(5, 30px);
