@@ -80,12 +80,12 @@
 .card-wrapper {
   border: 1px solid crimson; 
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(5, 30px);
   grid-gap: 3px;
+  position: fixed;
 }
 
-.mid-section-top > div{
+.card {
   border: 1px solid greenyellow;
 }
 
