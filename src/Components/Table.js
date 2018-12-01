@@ -53,7 +53,9 @@ function Table() {
                             <div className='player-chips'></div>
                             <div className='dealer-button'></div>
                         </div>
-                        <div className='mid-section-bottom'></div>
+                        <div className='mid-section-bottom'>
+                            <div className='chips-container'></div>
+                        </div>
                         <div className='player-profile'>
                             <div className='player-face'></div>
                             <div className='player-cards'></div>
