@@ -6,80 +6,80 @@ function Table() {
             <div className='poker-table'>
                 <div className='seating-wrapper'>
                     <div className='seating'>
-                        <div>1</div>
+                        <div></div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
-                        <div>5</div>
+                        <div></div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile mid-section-top'>
                             <div className='card-wrapper'>
-                                <div className='card'></div>
-                                <div className='card'></div>
-                                <div className='card'></div>
-                                <div className='card'></div>
-                                <div className='card'></div>
+                                <div className='card'>F</div>
+                                <div className='card'>F</div>
+                                <div className='card'>F</div>
+                                <div className='card'>T</div>
+                                <div className='card'>R</div>
                             </div>
                         </div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
                         <div className='mid-section-bottom'>
-                            <div className='chips-container'></div>
+                            <div className='chips-container'>The Pot</div>
                         </div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
-                        <div>17</div>
+                        <div></div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
-                        </div>
-                        <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
-                            <div className='player-face'></div>
-                            <div className='player-cards'></div>
-                            <div className='player-chips'></div>
-                            <div className='dealer-button'></div>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
+                        </div>
+                        <div className='player-profile'>
+                            <div className='player-face'>Player</div>
+                            <div className='player-cards'>Hand</div>
+                            <div className='player-chips'>Chips</div>
+                            <div className='dealer-button'>Button</div>
                         </div>
                     </div>
                 </div>
