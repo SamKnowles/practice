@@ -9,26 +9,38 @@ function Table() {
                         <div></div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
                         <div></div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
@@ -43,13 +55,19 @@ function Table() {
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
@@ -58,26 +76,38 @@ function Table() {
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
                         <div></div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-cards'>Hand</div>
+                            <div className='player-cards'>
+                                <div className='card hand'></div>
+                                <div className='card hand'></div>
+                            </div>
                             <div className='player-chips'>Chips</div>
                             <div className='dealer-button'>Button</div>
                         </div>
