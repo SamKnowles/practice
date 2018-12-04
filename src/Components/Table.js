@@ -14,7 +14,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
@@ -23,7 +27,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
@@ -32,7 +40,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div></div>
                         <div className='player-profile'>
@@ -42,7 +54,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div className='player-profile mid-section-top'>
                             <div className='card-wrapper'>
@@ -60,7 +76,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
@@ -69,7 +89,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div className='mid-section-bottom'>
                             <div className='chips-container'>The Pot</div>
@@ -81,7 +105,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div></div>
                         <div className='player-profile'>
@@ -91,7 +119,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
@@ -100,7 +132,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
@@ -109,7 +145,11 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                             <div className='player-chips'>Chips</div>
-                            <div className='dealer-button'>Button</div>
+                            <div className='dealer-smallblind-bigblind'>
+                                <div className='dealer'>D</div>
+                                <div className='small-blind'>SB</div>
+                                <div className='big-blind'>BB</div>
+                            </div>
                         </div>
                     </div>
                 </div>
