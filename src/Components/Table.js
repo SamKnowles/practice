@@ -126,18 +126,18 @@ function Table() {
                             </div>
                         </div>
                         <div className='player-profile'>
-                            <div className='player-face'>Player</div>
-                            <div className='player-cards'>
-                                <div className='card hand'></div>
-                                <div className='card hand'></div>
-                            </div>
-                            <div className='player-chips'>Chips</div>
-                            <div className='dealer-smallblind-bigblind'>
-                                <div className='dealer'>D</div>
-                                <div className='small-blind'>SB</div>
-                                <div className='big-blind'>BB</div>
-                            </div>
+                        <div className='player-face'>Player</div>
+                        <div className='player-chips'>Chips</div>
+                        <div className='dealer-smallblind-bigblind'>
+                            <div className='dealer'>D</div>
+                            <div className='small-blind'>SB</div>
+                            <div className='big-blind'>BB</div>
                         </div>
+                        <div className='player-cards'>
+                            <div className='card hand'></div>
+                            <div className='card hand'></div>
+                        </div>
+                    </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
                             <div className='player-cards'>
