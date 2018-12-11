@@ -5,7 +5,7 @@ function PreFlop() {
         <div>
         <div className="preFlop-container">
                 <div className="item1">PRE-FLOP</div>
-                <div className="item2">2</div>
+                <div className="item2"></div>
                 <div className="item3">
                 {`When you are sitting at the poker table, mental energy is a precious resource. It is not reasonable to expect that you will observe and fully integrate every detail at the table. Part of improving as a poker player is learning to come to the table with greater reserves of mental energy, but far more importantly is the skill to conserve mental energy.
 
@@ -238,8 +238,8 @@ Pot controlling
 
 - Will this player tell you their hand/talk poker with you after the hand?`}
                 </div>
-                <div className="item4">4</div>
-                <div className="item5">5</div>
+                <div className="item4"></div>
+                <div className="item5"></div>
             </div>
         </div>
     )
