@@ -1,5 +1,7 @@
 import React from 'react'
 
+import chipPic from '../Pictures/pokahChips.jpg'
+
 function Table() {
     return (
         <div className='poker-table-wrapper'>
@@ -22,7 +24,9 @@ function Table() {
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'>
+                                <img className='chips-pic' src={chipPic} alt="" />
+                            </div>
                             <div className='dealer-smallblind-bigblind'>
                                 <div className='dealer'>D</div>
                                 <div className='small-blind'>SB</div>
@@ -48,7 +52,7 @@ function Table() {
                         </div>
                         <div></div>
                         <div className='player-profile'>
-                        <div className='player-chips'>Chips</div>
+                            <div className='player-chips'>Chips</div>
                             <div className='player-cards'>
                                 <div className='card hand'></div>
                                 <div className='card hand'></div>
@@ -83,7 +87,7 @@ function Table() {
                             <div className='player-chips'>Chips</div>
                         </div>
                         <div className='player-profile'>
-                        <div className='player-chips'>Chips</div>
+                            <div className='player-chips'>Chips</div>
                             <div className='player-cards'>
                                 <div className='card hand'></div>
                                 <div className='card hand'></div>
