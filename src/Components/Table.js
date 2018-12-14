@@ -11,7 +11,7 @@ function Table() {
                         <div></div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='dealer-smallblind-bigblind'>
                                 <div className='dealer'>D</div>
                                 <div className='small-blind'>SB</div>
@@ -39,7 +39,7 @@ function Table() {
                         </div>
                         <div className='player-profile'>
                             <div className='player-face'>Player</div>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='dealer-smallblind-bigblind'>
                                 <div className='dealer'>D</div>
                                 <div className='small-blind'>SB</div>
@@ -52,7 +52,7 @@ function Table() {
                         </div>
                         <div></div>
                         <div className='player-profile'>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-cards'>
                                 <div className='card hand'></div>
                                 <div className='card hand'></div>
@@ -84,10 +84,10 @@ function Table() {
                                 <div className='card hand'></div>
                                 <div className='card hand'></div>
                             </div>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                         </div>
                         <div className='player-profile'>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-cards'>
                                 <div className='card hand'></div>
                                 <div className='card hand'></div>
@@ -113,7 +113,7 @@ function Table() {
                                 <div className='card hand'></div>
                                 <div className='card hand'></div>
                             </div>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                         </div>
                         <div></div>
                         <div className='player-profile'>
@@ -126,7 +126,7 @@ function Table() {
                                 <div className='small-blind'>SB</div>
                                 <div className='big-blind'>BB</div>
                             </div>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-face'>Player</div>
                         </div>
                         <div className='player-profile'>
@@ -139,7 +139,7 @@ function Table() {
                                 <div className='small-blind'>SB</div>
                                 <div className='big-blind'>BB</div>
                             </div>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-face'>Player</div>
                         </div>
                         <div className='player-profile'>
@@ -152,7 +152,7 @@ function Table() {
                                 <div className='small-blind'>SB</div>
                                 <div className='big-blind'>BB</div>
                             </div>
-                            <div className='player-chips'>Chips</div>
+                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-face'>Player</div>
                         </div>
                     </div>
