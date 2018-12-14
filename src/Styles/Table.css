@@ -197,5 +197,5 @@
 }
 
 .chips-pic {
-  height: 10%;
+  max-height: 70%;
 }
