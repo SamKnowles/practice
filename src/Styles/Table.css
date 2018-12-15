@@ -51,31 +51,26 @@
 .player-face {
   border: 1px solid Yellow;
   height: 100%;
-  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .player-cards {
   border: 1px ridge hotpink;
   height: 100%;
-  font-size: 20px;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
 }
 
 .player-chips {
   border: 1px solid skyblue;
   height: 100%;
-  font-size: 20px;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,4 +200,6 @@
   vertical-align: middle;
   max-height: 100%;
   max-width: 100%;
+  background-color: transparent;
+  
 }
