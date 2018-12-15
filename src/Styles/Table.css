@@ -201,5 +201,8 @@
 }
 
 .playerFace {
- max-heivht: 20%  
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
 }
