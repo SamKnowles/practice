@@ -1,6 +1,7 @@
 import React from 'react'
 
 import chipPic from '../Pictures/pokahChips.jpg'
+import playerFace from '../Pictures/player face.png'
 
 function Table() {
     return (
@@ -10,7 +11,7 @@ function Table() {
                     <div className='seating'>
                         <div></div>
                         <div className='player-profile'>
-                            <div className='player-face'>Player</div>
+                            <div className='player-face'><img className='playerFace' src={playerFace} alt="" /></div>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='dealer-smallblind-bigblind'>
                                 <div className='dealer'>D</div>
