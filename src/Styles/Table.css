@@ -48,15 +48,6 @@
   grid-template-rows: repeat(2, 1fr);
 }
 
-.player-face {
-  border: 1px solid Yellow;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
 .player-cards {
   border: 1px ridge hotpink;
   height: 100%;
@@ -195,10 +186,18 @@
   max-height: 70%;
 }
 
+.player-face {
+  border: 1px solid Yellow;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
 .playerFace {
   display: inline-block;
   vertical-align: middle;
   max-height: 100%;
   max-width: 100%;
-  opacity: 0.5;
 }
