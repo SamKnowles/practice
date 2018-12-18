@@ -18,7 +18,7 @@ function Table() {
             <div className='poker-table'>
                 <div className='seating-wrapper'>
                     <div className='seating'>
-                        <div>POKAH</div>
+                        <div></div>
                         <div className='player-profile'>
                             <div className='player-face'><img className='playerFace' src={pointyKim} alt="" /></div>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
@@ -60,7 +60,7 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                         </div>
-                        <div>POKAH</div>
+                        <div></div>
                         <div className='player-profile'>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-cards'>
@@ -125,7 +125,7 @@ function Table() {
                             </div>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                         </div>
-                        <div>POKAH</div>
+                        <div></div>
                         <div className='player-profile'>
                             <div className='player-cards'>
                                 <div className='card hand'></div>
