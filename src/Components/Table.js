@@ -18,7 +18,7 @@ function Table() {
             <div className='poker-table'>
                 <div className='seating-wrapper'>
                     <div className='seating'>
-                        <div></div>
+                        <div>POKAH</div>
                         <div className='player-profile'>
                             <div className='player-face'><img className='playerFace' src={pointyKim} alt="" /></div>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
@@ -60,7 +60,7 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                         </div>
-                        <div></div>
+                        <div>POKAH</div>
                         <div className='player-profile'>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-cards'>
@@ -125,7 +125,7 @@ function Table() {
                             </div>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                         </div>
-                        <div></div>
+                        <div>POKAH</div>
                         <div className='player-profile'>
                             <div className='player-cards'>
                                 <div className='card hand'></div>
@@ -164,6 +164,18 @@ function Table() {
                             </div>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-face'><img className='playerFace' src={putin} alt="" /></div>
+                        </div>
+                        <div className='player-options-wrapper'>
+                            <div className='fold-button'>Fold</div>
+                            <div className='bet-raise-wrapper'>
+                                <div className='slider-wrapper'></div>
+                                <div className='bet-raise-button-wrappers'>
+                                    <div className='bet-button'>Bet</div>
+                                    <div className='raise-button'>Raise</div>
+                                </div>
+                            </div>
+                            <div className='check-button'>Check</div>
+                            <div className='call-button'>Call</div>
                         </div>
                     </div>
                 </div>
