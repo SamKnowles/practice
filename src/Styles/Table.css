@@ -244,6 +244,7 @@
 }
 
 .slider-wrapper {
+  background-color: hotpink;
   border: solid 1px royalblue;
   grid-row-start: 1;
   grid-row-end: span 5;
