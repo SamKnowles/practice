@@ -247,6 +247,13 @@
   border: solid 1px royalblue;
   grid-row-start: 1;
   grid-row-end: span 5;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(1, 4fr);
+}
+
+.slider-wrapper > div {
+  border:  solid pink;  
 }
 
 .bet-raise-button-wrappers {
