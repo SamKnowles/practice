@@ -168,7 +168,10 @@ function Table() {
                         <div className='player-options-wrapper'>
                             <div className='fold-button'>Fold</div>
                             <div className='bet-raise-wrapper'>
-                                <div className='slider-wrapper'></div>
+                                <div className='slider-wrapper'>
+                                    <div className='raise-amount'></div>
+                                    <div className='slider'></div>
+                                </div>
                                 <div className='bet-raise-button-wrappers'>
                                     <div className='bet-button'>Bet</div>
                                     <div className='raise-button'>Raise</div>
