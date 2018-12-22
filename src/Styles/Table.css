@@ -208,8 +208,8 @@
   border: 1px solid Purple;
 }
 
-.player-options-wrapper > div {
- border: 1px solid red;
+.player-options-wrapper>div {
+  border: 1px solid red;
   text-align: center;
   font-size: 10px;
 }
@@ -244,7 +244,6 @@
 }
 
 .slider-wrapper {
-  background-color: hotpink;
   border: solid 1px royalblue;
   grid-row-start: 1;
   grid-row-end: span 5;
@@ -253,8 +252,8 @@
   grid-template-rows: repeat(1, 4fr);
 }
 
-.slider-wrapper > div {
-  border: 1px solid pink;  
+.slider-wrapper>div {
+  border: 1px solid pink;
 }
 
 .bet-raise-button-wrappers {
@@ -273,7 +272,7 @@
 }
 
 .raise-button {
-  border:  solid 1px greenyellow;
+  border: solid 1px greenyellow;
   width: 50%;
   display: flex;
   justify-content: center;
