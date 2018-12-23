@@ -248,18 +248,12 @@
   grid-row-start: 1;
   grid-row-end: span 5;
   display: grid;
-
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 5fr;
 }
 
-
-.raise-amount {
-  height: 1fr;
+.slider-wrapper > div {
   border: solid 1px black;
-}
-
-.slider {
-  height: 4fr;
-  border: solid 1px thistle;  
 }
 
 .bet-raise-button-wrappers {
