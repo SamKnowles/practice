@@ -169,8 +169,8 @@ function Table() {
                             <div className='fold-button'>Fold</div>
                             <div className='bet-raise-wrapper'>
                                 <div className='slider-wrapper'>
-                                    <div className='raise-amount'></div>
-                                    <div className='slider'></div>
+                                    <div className='raise-amount'>$98,000</div>
+                                    <div className='slider'>Money Slider</div>
                                 </div>
                                 <div className='bet-raise-button-wrappers'>
                                     <div className='bet-button'>Bet</div>
