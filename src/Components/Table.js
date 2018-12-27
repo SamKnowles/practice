@@ -165,7 +165,7 @@ function Table() {
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                             <div className='player-face'><img className='playerFace' src={putin} alt="" /></div>
                         </div>
-                        <div className='player-options-wrapper'>
+                        {/* <div className='player-options-wrapper'>
                             <div className='fold-button'>Fold</div>
                             <div className='bet-raise-wrapper'>
                                 <div className='slider-wrapper'>
@@ -179,7 +179,7 @@ function Table() {
                             </div>
                             <div className='check-button'>Check</div>
                             <div className='call-button'>Call</div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
