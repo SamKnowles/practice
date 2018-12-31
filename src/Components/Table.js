@@ -1,10 +1,10 @@
 import React from 'react'
-import PutinsGame from '../Components/Players/Borat'
+import Putin from '../Components/Players/Putin'
 import Borat from '../Components/Players/Borat'
 import Drake from '../Components/Players/Drake'
 import ETGame from '../Components/Players/Putin'
-import KeanuGame from '../Components/Players/Putin'
-import KimGame from '../Components/Players/Putin'
+import Neo from '../Components/Players/Neo'
+import Kim from '../Components/Players/Kim'
 import Leno from '../Components/Players/Leno'
 import LowerKim from '../Components/Players/Putin'
 import OscarGame from '../Components/Players/Putin'
@@ -31,21 +31,7 @@ function Table() {
                     <div className='seating'>
                         <div></div>
                         <PointyKim />
-                        <div className='player-profile'>
-                            <div className='player-face'><img className='playerFace' src={stoicKim} alt="" /></div>
-                            <div className='player-chips'>
-                                <img className='chips-pic' src={chipPic} alt="" />
-                            </div>
-                            <div className='dealer-smallblind-bigblind'>
-                                <div className='dealer'>D</div>
-                                <div className='small-blind'>SB</div>
-                                <div className='big-blind'>BB</div>
-                            </div>
-                            <div className='player-cards'>
-                                <div className='card hand'></div>
-                                <div className='card hand'></div>
-                            </div>
-                        </div>
+                        <Kim />
                         <Borat />
                         <div></div>
                         <div className='player-profile'>
@@ -83,19 +69,7 @@ function Table() {
                             </div>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                         </div>
-                        <div className='player-profile'>
-                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
-                            <div className='player-cards'>
-                                <div className='card hand'></div>
-                                <div className='card hand'></div>
-                            </div>
-                            <div className='player-face'><img className='playerFace' src={neo} alt="" /></div>
-                            <div className='dealer-smallblind-bigblind'>
-                                <div className='dealer'>D</div>
-                                <div className='small-blind'>SB</div>
-                                <div className='big-blind'>BB</div>
-                            </div>
-                        </div>
+                        <Neo />
                         <div className='mid-section-bottom'>
                             <div className='chips-container'>The Pot</div>
                         </div>
@@ -115,19 +89,7 @@ function Table() {
                         <div></div>
                         <Drake />
                         <Leno />
-                        <div className='player-profile'>
-                            <div className='player-cards'>
-                                <div className='card hand'></div>
-                                <div className='card hand'></div>
-                            </div>
-                            <div className='dealer-smallblind-bigblind'>
-                                <div className='dealer'>D</div>
-                                <div className='small-blind'>SB</div>
-                                <div className='big-blind'>BB</div>
-                            </div>
-                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
-                            <div className='player-face'><img className='playerFace' src={putin} alt="" /></div>
-                        </div>
+                        <Putin />
                     </div>
                 </div>
             </div>
