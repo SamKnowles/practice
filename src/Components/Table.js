@@ -8,9 +8,8 @@ import KimGame from '../Components/Players/Putin'
 import LenoGame from '../Components/Players/Putin'
 import LowerKim from '../Components/Players/Putin'
 import OscarGame from '../Components/Players/Putin'
-import PointyKim from '../Components/Players/Putin'
+import PointyKim from '../Components/Players/PointyKim'
 import WeirdKim from '../Components/Players/Putin'
-
 
 import chipPic from '../Pictures/pokahChips.png'
 import playerFace from '../Pictures/player face.png'
@@ -31,19 +30,7 @@ function Table() {
                 <div className='seating-wrapper'>
                     <div className='seating'>
                         <div></div>
-                        <div className='player-profile'>
-                            <div className='player-face'><img className='playerFace' src={pointyKim} alt="" /></div>
-                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
-                            <div className='dealer-smallblind-bigblind'>
-                                <div className='dealer'>D</div>
-                                <div className='small-blind'>SB</div>
-                                <div className='big-blind'>BB</div>
-                            </div>
-                            <div className='player-cards'>
-                                <div className='card hand'></div>
-                                <div className='card hand'></div>
-                            </div>
-                        </div>
+                        <PointyKim />
                         <div className='player-profile'>
                             <div className='player-face'><img className='playerFace' src={stoicKim} alt="" /></div>
                             <div className='player-chips'>

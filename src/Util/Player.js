@@ -13,9 +13,7 @@ export default class Player {
                 bet: false
             };
         }
-
-        takeTurn(ation) {
-            
+        takeTurn(action) {
         }
 }
 
