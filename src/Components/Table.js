@@ -1,4 +1,16 @@
 import React from 'react'
+import PutinsGame from '../Components/Players/Borat'
+import BoratGame from '../Components/Players/Drake'
+import DrakeGame from '../Components/Players/ET'
+import ETGame from '../Components/Players/Putin'
+import KeanuGame from '../Components/Players/Putin'
+import KimGame from '../Components/Players/Putin'
+import LenoGame from '../Components/Players/Putin'
+import LowerKim from '../Components/Players/Putin'
+import OscarGame from '../Components/Players/Putin'
+import PointyKim from '../Components/Players/Putin'
+import WeirdKim from '../Components/Players/Putin'
+
 
 import chipPic from '../Pictures/pokahChips.png'
 import playerFace from '../Pictures/player face.png'
