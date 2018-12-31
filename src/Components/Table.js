@@ -1,6 +1,6 @@
 import React from 'react'
 import PutinsGame from '../Components/Players/Borat'
-import BoratGame from '../Components/Players/Drake'
+import Borat from '../Components/Players/Borat'
 import DrakeGame from '../Components/Players/ET'
 import ETGame from '../Components/Players/Putin'
 import KeanuGame from '../Components/Players/Putin'
@@ -46,19 +46,7 @@ function Table() {
                                 <div className='card hand'></div>
                             </div>
                         </div>
-                        <div className='player-profile'>
-                            <div className='player-face'><img className='playerFace' src={borat} alt="" /></div>
-                            <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
-                            <div className='dealer-smallblind-bigblind'>
-                                <div className='dealer'>D</div>
-                                <div className='small-blind'>SB</div>
-                                <div className='big-blind'>BB</div>
-                            </div>
-                            <div className='player-cards'>
-                                <div className='card hand'></div>
-                                <div className='card hand'></div>
-                            </div>
-                        </div>
+                        <Borat />
                         <div></div>
                         <div className='player-profile'>
                             <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
