@@ -5,7 +5,7 @@ function Nav() {
     return (
         <div>
             <div className='nav-container'>
-                <NavLink exact className='nav-item' activeClassName="selcted" to='/'>Calling Hands</NavLink>
+                <NavLink exact className='nav-item' activeClassName="selected" to='/'>Calling Hands</NavLink>
                 <NavLink className='nav-item' activeClassName='selected' to='/preflop'>Pre-Flop</NavLink>
                 <NavLink className='nav-item' activeClassName="selcted" to='/table'>Table</NavLink>
             </div>

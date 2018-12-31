@@ -48,6 +48,10 @@
   grid-template-rows: repeat(2, 1fr);
 }
 
+.player-profile[activeClassName="selected"] {
+  border: 3px solid white;
+}
+
 .player-cards {
   border: 1px ridge hotpink;
   height: 100%;

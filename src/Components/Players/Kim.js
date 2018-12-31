@@ -10,7 +10,7 @@ export default class Kim extends Component {
             name: 'Stoic Kim',
             activePlayer: false,
             chipCount: 200,
-            position: 0,
+            position: '',
             hand: [{ suit: 'Spades', value: 'Ace' },
             { suit: 'Clubs', value: 'Ace' }],
             action: {
@@ -65,9 +65,9 @@ export default class Kim extends Component {
                 <div className='player-face'><img className='playerFace' src={kim} alt="" /></div>
                 <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                 <div className='dealer-smallblind-bigblind'>
-                    {this.state.position === 0 ? <div className='dealer'>D</div> : null}
-                    {this.state.position === 1 ? <div className='small-blind'>SB</div> : null}
-                    {this.state.position === 2 ? <div className='big-blind'>BB</div> : null}
+                    {this.state.position === 'dealer' ? <div className='dealer'>D</div> : null}
+                    {this.state.position === 'small blind' ? <div className='small-blind'>SB</div> : null}
+                    {this.state.position === 'big blind' ? <div className='big-blind'>BB</div> : null}
                 </div>
                 <div className='player-cards'>
                     <div className='card hand'></div>

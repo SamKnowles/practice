@@ -8,9 +8,9 @@ export default class Drake extends Component {
         super(props)
         this.state = {
             name: 'Drake',
-            activePlayer: false,
+            activePlayer: true,
             chipCount: 200,
-            position: 1,
+            position: 'dealer',
             hand: [{ suit: 'Spades', value: 'Ace' },
             { suit: 'Clubs', value: 'Ace' }],
             action: {
@@ -61,15 +61,15 @@ export default class Drake extends Component {
 
     render() {
         return (
-            <div className='player-profile'>
+            <div className='player-profile' activeClassName={this.state.activePlayer ? 'selected' : null}>
                 <div className='player-cards'>
                     <div className='card hand'></div>
                     <div className='card hand'></div>
                 </div>
                 <div className='dealer-smallblind-bigblind'>
-                    {this.state.position === 0 ? <div className='dealer'>D</div> : null}
-                    {this.state.position === 1 ? <div className='small-blind'>SB</div> : null}
-                    {this.state.position === 2 ? <div className='big-blind'>BB</div> : null}
+                    {this.state.position === 'dealer' ? <div className='dealer'>D</div> : null}
+                    {this.state.position === 'small blind' ? <div className='small-blind'>SB</div> : null}
+                    {this.state.position === 'big blind' ? <div className='big-blind'>BB</div> : null}
                 </div>
                 <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                 <div className='player-face'><img className='playerFace' src={drake} alt="" /></div>
