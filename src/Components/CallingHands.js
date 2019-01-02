@@ -10,20 +10,20 @@ function CallingHands() {
     return (
         <div className='calling-hands-component-wrapper'>
             <div className='calling-hands-container-wrapper'>
-                <div class="calling-hands-container">
-                    <div class="calling-hands-info">1</div>
-                    <div class="ch-seat-1">UTG</div>
-                    <div class="ch-seat-2">UTG1</div>
-                    <div class="ch-seat-3">UTG2</div>
-                    <div class="ch-seat-5">MP1</div>
-                    <div class="ch-seat-6">BB</div>
-                    <div class="ch-seat-7">Cards</div>
-                    <div class="ch-seat-8">Chips</div>
-                    <div class="ch-seat-9">MP2</div>
-                    <div class="ch-seat-10">SB</div>
-                    <div class="ch-seat-11">BTN</div>
-                    <div class="ch-seat-12">CO</div>
-                    <div class="ch-seat-13">MP3</div>
+                <div className="calling-hands-container">
+                    <div className="calling-hands-info">1</div>
+                    <div className="ch-seat-1">UTG</div>
+                    <div className="ch-seat-2">UTG1</div>
+                    <div className="ch-seat-3">UTG2</div>
+                    <div className="ch-seat-5">MP1</div>
+                    <div className="ch-seat-6">BB</div>
+                    <div className="ch-seat-7">Cards</div>
+                    <div className="ch-seat-8">Chips</div>
+                    <div className="ch-seat-9">MP2</div>
+                    <div className="ch-seat-10">SB</div>
+                    <div className="ch-seat-11">BTN</div>
+                    <div className="ch-seat-12">CO</div>
+                    <div className="ch-seat-13">MP3</div>
                 </div>
             </div>
             <div className='calling-hand-pic-wrapper'>

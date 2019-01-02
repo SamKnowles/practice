@@ -10,6 +10,9 @@ import Leno from '../Components/Players/Leno'
 import Oscar from '../Components/Players/Oscar'
 import PointyKim from '../Components/Players/PointyKim'
 import Kimmy from '../Components/Players/Kimmy'
+import chipPic from '../Pictures/pokahChips.png'
+
+let playerArray = require('../Util/playerArray');
 
 export default class Table extends React.Component {
     constructor(props) {
@@ -20,11 +23,30 @@ export default class Table extends React.Component {
 
     }
     render() {
+        console.log(playerArray);
         return (
             <div className='poker-table-wrapper'>
                 <div className='poker-table'>
                     <div className='seating-wrapper'>
-                        <div className='seating'>
+                    { playerArray && playerArray.map(player => {
+                        console.log(player.imgUrl)
+                        return ( 
+                            <div className='player-profile' activeClassName={this.state.activePlayer ? 'selected' : null}>
+                                <div className='player-face'><img className='playerFace' src={`player.imgUrl`} alt="" /></div>
+                                <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
+                                <div className='dealer-smallblind-bigblind'>
+                                    {player.position === 'dealer' ? <div className='dealer'>D</div> : null}
+                                    {player.position === 'small blind' ? <div className='small-blind'>SB</div> : null}
+                                    {player.position === 'big blind' ? <div className='big-blind'>BB</div> : null}
+                                </div>
+                                <div className='player-cards'>
+                                    <div className='card hand'></div>
+                                    <div className='card hand'></div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                        {/* <div className='seating'>
                             <div></div>
                             <PointyKim />
                             <Kim />
@@ -50,7 +72,7 @@ export default class Table extends React.Component {
                             <Drake />
                             <Leno />
                             <Putin />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
