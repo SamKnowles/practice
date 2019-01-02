@@ -61,8 +61,8 @@ export default class Leno extends Component {
 
     render() {
         return (
-            <div className='player-profile'>
-                <div className='player-cards'>
+            <div className='player-profile' activeClassName={this.state.activePlayer ? 'selected' : null}>
+            <div className='player-cards'>
                     <div className='card hand'></div>
                     <div className='card hand'></div>
                 </div>

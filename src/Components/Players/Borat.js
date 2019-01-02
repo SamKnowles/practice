@@ -8,7 +8,7 @@ export default class Borat extends Component {
         super(props)
         this.state = {
             name: 'Borat',
-            activePlayer: false,
+            activePlayer: true,
             chipCount: 200,
             position: 0,
             hand: [{ suit: 'Spades', value: 'Ace' },
@@ -61,8 +61,8 @@ export default class Borat extends Component {
 
     render() {
         return (
-            <div className='player-profile'>
-                <div className='player-face'><img className='playerFace' src={borat} alt="" /></div>
+            <div className='player-profile' activeClassName={this.state.activePlayer ? 'selected' : null}>
+            <div className='player-face'><img className='playerFace' src={borat} alt="" /></div>
                 <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                 <div className='dealer-smallblind-bigblind'>
                     {this.state.position === 'dealer' ? <div className='dealer'>D</div> : null}

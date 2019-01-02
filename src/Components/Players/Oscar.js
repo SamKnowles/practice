@@ -61,8 +61,8 @@ export default class Kim extends Component {
 
     render() {
         return (
-            <div className='player-profile'>
-                <div className='dealer-smallblind-bigblind'>
+            <div className='player-profile' activeClassName={this.state.activePlayer ? 'selected' : null}>
+            <div className='dealer-smallblind-bigblind'>
                     {this.state.position === 'dealer' ? <div className='dealer'>D</div> : null}
                     {this.state.position === 'small blind' ? <div className='small-blind'>SB</div> : null}
                     {this.state.position === 'big blind' ? <div className='big-blind'>BB</div> : null}
