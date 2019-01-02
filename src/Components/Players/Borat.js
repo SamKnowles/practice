@@ -8,7 +8,7 @@ export default class Borat extends Component {
         super(props)
         this.state = {
             name: 'Borat',
-            activePlayer: true,
+            activePlayer: false,
             chipCount: 200,
             position: 0,
             hand: [{ suit: 'Spades', value: 'Ace' },

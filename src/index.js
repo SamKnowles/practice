@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './Components/App';
 
-const { Consumer, Provider } = React.createContext()
+const { Provider } = React.createContext()
 
 ReactDOM.render(
     <Provider>

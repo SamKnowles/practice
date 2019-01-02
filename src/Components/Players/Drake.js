@@ -8,7 +8,7 @@ export default class Drake extends Component {
         super(props)
         this.state = {
             name: 'Drake',
-            activePlayer: false,
+            activePlayer: true,
             chipCount: 200,
             position: 'dealer',
             hand: [{ suit: 'Spades', value: 'Ace' },
