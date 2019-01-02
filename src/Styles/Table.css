@@ -16,31 +16,6 @@
   justify-content: center;
 }
 
-.seating-wrapper {
-  border: 1px solid orange;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.seating {
-  width: 100%;
-  height: 60%;
-  border: 1px solid black;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  /*Make the grid smaller than the container*/
-  grid-template-rows: auto auto auto auto;
-  grid-gap: 10px;
-}
-
-.seating>div {
-  text-align: center;
-  font-size: 20px;
-}
-
 .player-profile {
   border: 1px solid green;
   display: grid;
@@ -121,16 +96,6 @@
   color: black;
 }
 
-.mid-section-top {
-  border: 1px solid black;
-  grid-column-start: 2;
-  grid-column-end: span 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .card-wrapper {
   border: 1px solid crimson;
   display: grid;
@@ -166,6 +131,7 @@
 }
 
 .mid-section-bottom {
+  grid-area: twelve thirteen fourteen;
   border: 1px solid black;
   grid-column-start: 2;
   grid-column-end: span 3;
@@ -204,5 +170,82 @@
   vertical-align: middle;
   max-height: 100%;
   max-width: 100%;
+}
+
+.seating-wrapper {
+width: 100%;
+  display: grid;
+  grid-template-areas:
+  'one two three four five'
+  'six seven eight nine ten'
+  'eleven twelve thirteen fourteen fifteen'
+  'sixteen seventeen eighteen nineteen twenty'
+}
+
+.pointy-kim-seat {
+  grid-area: two;
+}
+
+.kimmy-seat {
+  grid-area: three;
+}
+
+.borat-seat {
+  grid-area: four;
+}
+
+.et-seat {
+  grid-area: ten;
+}
+
+.oscar-seat {
+  grid-area: fifteen;
+}
+
+.kim-seat {
+  grid-area: six;
+}
+
+.neo-seat {
+  grid-area: eleven;
+}
+
+.leno-seat {
+  grid-area: nineteen;
+}
+
+.drake-seat {
+  grid-area: seventeen;
+}
+
+.putin-seat {
+  grid-area: eighteen;
+}
+
+.mid-section-top {
+  grid-area: 7 8 9;
+  border: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.seating {
+  width: 100%;
+  height: 60%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  /*Make the grid smaller than the container*/
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.seating>div {
+  text-align: center;
+  font-size: 20px;
 }
 

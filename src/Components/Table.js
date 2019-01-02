@@ -29,9 +29,9 @@ export default class Table extends React.Component {
                 <div className='poker-table'>
                     <div className='seating-wrapper'>
                     { playerArray && playerArray.map(player => {
-                        console.log(player.imgUrl)
+                        console.log(player.className)
                         return ( 
-                            <div className='player-profile' activeClassName={this.state.activePlayer ? 'selected' : null}>
+                            <div className={`player-profile ${player.className}`} activeClassName={this.state.activePlayer ? 'selected' : null}>
                                 <div className='player-face'><img className='playerFace' src={player.imgUrl} alt="" /></div>
                                 <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                                 <div className='dealer-smallblind-bigblind'>
@@ -52,8 +52,8 @@ export default class Table extends React.Component {
                             <Kim />
                             <Borat />
                             <div></div>
-                            <Kimmy />
-                            <div className='player-profile mid-section-top'>
+                            <Kimmy /> */}
+                            <div className='mid-section-top'>
                                 <div className='card-wrapper'>
                                     <div className='card'>F</div>
                                     <div className='card'>F</div>
@@ -62,20 +62,19 @@ export default class Table extends React.Component {
                                     <div className='card'>R</div>
                                 </div>
                             </div>
-                            <ET />
-                            <Neo />
                             <div className='mid-section-bottom'>
                                 <div className='chips-container'>The Pot</div>
                             </div>
+                            {/* <ET />
+                            <Neo />
                             <Oscar />
                             <div></div>
                             <Drake />
                             <Leno />
-                            <Putin />
-                        </div> */}
+                            <Putin /> */}
+                        </div>
                     </div>
                 </div>
-            </div>
         )
     }
 }
