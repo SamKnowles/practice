@@ -32,7 +32,7 @@ export default class Table extends React.Component {
                         console.log(player.imgUrl)
                         return ( 
                             <div className='player-profile' activeClassName={this.state.activePlayer ? 'selected' : null}>
-                                <div className='player-face'><img className='playerFace' src={`player.imgUrl`} alt="" /></div>
+                                <div className='player-face'><img className='playerFace' src={player.imgUrl} alt="" /></div>
                                 <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                                 <div className='dealer-smallblind-bigblind'>
                                     {player.position === 'dealer' ? <div className='dealer'>D</div> : null}
