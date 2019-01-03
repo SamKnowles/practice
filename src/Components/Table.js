@@ -12,7 +12,8 @@ import PointyKim from '../Components/Players/PointyKim'
 import Kimmy from '../Components/Players/Kimmy'
 import chipPic from '../Pictures/pokahChips.png'
 
-let playerArray = require('../Util/playerArray');
+let data = require('../Util/playerArray');
+let playerArray = data.playerArray
 
 export default class Table extends React.Component {
     constructor(props) {
@@ -20,61 +21,68 @@ export default class Table extends React.Component {
         this.state = {
             activePlayer: 0
         }
-
     }
+    next = () => {
+        let activePlayer = this.state.activePlayer;
+        if (activePlayer === playerArray.length - 1) {
+            activePlayer = 0;
+        } else {
+            activePlayer++;
+        }
+        this.setState({
+            activePlayer
+        });
+    }
+
+    
+
+
     render() {
-        console.log(playerArray);
+        console.log(playerArray)
         return (
             <div className='poker-table-wrapper'>
                 <div className='poker-table'>
                     <div className='seating-wrapper'>
-                    { playerArray && playerArray.map(player => {
-                        console.log(player.className)
-                        return ( 
-                            <div className={`player-profile ${player.className}`} activeClassName={this.state.activePlayer ? 'selected' : null}>
-                                <div className='player-face'><img className='playerFace' src={player.imgUrl} alt="" /></div>
-                                <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
-                                <div className='dealer-smallblind-bigblind'>
-                                    {player.position === 'dealer' ? <div className='dealer'>D</div> : null}
-                                    {player.position === 'small blind' ? <div className='small-blind'>SB</div> : null}
-                                    {player.position === 'big blind' ? <div className='big-blind'>BB</div> : null}
+                        {playerArray && playerArray.map((player, i) => {
+                            return (
+                                <div className={`player-profile ${player.className}`} activeClassName={this.state.activePlayer === i ? 'selected' : null}>
+                                    <div className='player-face'><img className='playerFace' src={player.imgUrl} alt="" /></div>
+                                    <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
+                                    <div className='dealer-smallblind-bigblind'>
+                                        {player.position === 'dealer' ? <div className='dealer'>D</div> : null}
+                                        {player.position === 'small blind' ? <div className='small-blind'>SB</div> : null}
+                                        {player.position === 'big blind' ? <div className='big-blind'>BB</div> : null}
+                                    </div>
+                                    <div className='player-cards'>
+                                        <div className='card hand'></div>
+                                        <div className='card hand'></div>
+                                    </div>
                                 </div>
-                                <div className='player-cards'>
-                                    <div className='card hand'></div>
-                                    <div className='card hand'></div>
-                                </div>
+                            )
+                        })}
+                        <button className="btn btn-default" onClick={this.next}>Next</button>
+                        <div className='mid-section-top'>
+                            <div className='card-wrapper'>
+                                <div className='card'>F</div>
+                                <div className='card'>F</div>
+                                <div className='card'>F</div>
+                                <div className='card'>T</div>
+                                <div className='card'>R</div>
                             </div>
-                        )
-                    })}
-                        {/* <div className='seating'>
-                            <div></div>
-                            <PointyKim />
-                            <Kim />
-                            <Borat />
-                            <div></div>
-                            <Kimmy /> */}
-                            <div className='mid-section-top'>
-                                <div className='card-wrapper'>
-                                    <div className='card'>F</div>
-                                    <div className='card'>F</div>
-                                    <div className='card'>F</div>
-                                    <div className='card'>T</div>
-                                    <div className='card'>R</div>
-                                </div>
-                            </div>
-                            <div className='mid-section-bottom'>
-                                <div className='chips-container'>The Pot</div>
-                            </div>
-                            {/* <ET />
+                        </div>
+                        <div className='mid-section-bottom'>
+                            <div className='chips-container'>The Pot</div>
+                        </div>
+                        {/* <ET />
                             <Neo />
                             <Oscar />
                             <div></div>
                             <Drake />
                             <Leno />
                             <Putin /> */}
-                        </div>
                     </div>
                 </div>
+            </div>
         )
     }
 }
