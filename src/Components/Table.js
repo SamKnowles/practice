@@ -19,7 +19,14 @@ export default class Table extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            activePlayer: 0
+            activePlayer: 0,
+            action: {
+                folded: false,
+                raised: false,
+                checked: false,
+                called: false,
+                bet: false
+            }
         }
     }
     next = () => {
@@ -34,11 +41,9 @@ export default class Table extends React.Component {
         });
     }
 
-    
 
 
     render() {
-        console.log(playerArray)
         return (
             <div className='poker-table-wrapper'>
                 <div className='poker-table'>
@@ -49,9 +54,9 @@ export default class Table extends React.Component {
                                     <div className='player-face'><img className='playerFace' src={player.imgUrl} alt="" /></div>
                                     <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
                                     <div className='dealer-smallblind-bigblind'>
-                                        {player.position === 'dealer' ? <div className='dealer'>D</div> : null}
-                                        {player.position === 'small blind' ? <div className='small-blind'>SB</div> : null}
-                                        {player.position === 'big blind' ? <div className='big-blind'>BB</div> : null}
+                                        {this.state.activePlayer === i ? <div className='dealer'>D</div> : null}
+                                        {i === (this.state.activePlayer + 1) % playerArray.length ? <div className='small-blind'>SB</div> : null}
+                                        {i === (this.state.activePlayer + 2) % playerArray.length ? <div className='big-blind'>BB</div> : null}
                                     </div>
                                     <div className='player-cards'>
                                         <div className='card hand'></div>
@@ -60,6 +65,7 @@ export default class Table extends React.Component {
                                 </div>
                             )
                         })}
+                        <button className="btn btn-default" onClick={this.next}>Next</button>
                         <button className="btn btn-default" onClick={this.next}>Next</button>
                         <div className='mid-section-top'>
                             <div className='card-wrapper'>
