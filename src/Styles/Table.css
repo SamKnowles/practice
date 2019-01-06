@@ -17,6 +17,10 @@
   margin: -5%;
 }
 
+.is-inactive {
+  margin: -50%;
+}
+
 .player-cards {
   border: 1px ridge hotpink;
   height: 100%;

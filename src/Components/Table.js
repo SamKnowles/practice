@@ -41,6 +41,13 @@ export default class Table extends React.Component {
         });
     }
 
+    fold = () => {
+        this.setState({
+            action: {
+                folded: true
+            }
+        })
+    }
 
 
     render() {
@@ -65,8 +72,8 @@ export default class Table extends React.Component {
                                 </div>
                             )
                         })}
-                        <button className="btn btn-default" onClick={this.next}>Next</button>
-                        <button className="btn btn-default" onClick={this.next}>Next</button>
+                        <button className="btn btn-default" onClick={this.next}>Check</button>
+                        <button className={`btn btn-default ${this.state.action.folded ? 'is-inactive': null}`} onClick={this.fold}>Fold</button>
                         <div className='mid-section-top'>
                             <div className='card-wrapper'>
                                 <div className='card'>F</div>
