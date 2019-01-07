@@ -73,7 +73,7 @@ export default class Table extends React.Component {
                             )
                         })}
                         <button className="btn btn-default" onClick={this.next}>Check</button>
-                        <button className={`btn btn-default ${this.state.action.folded ? 'is-inactive': null}`} onClick={this.fold}>Fold</button>
+                        <button className={`btn btn-default ${this.state.action.folded ? 'is-inactive': null}`} onClick={this.next}>Fold</button>
                         <div className='mid-section-top'>
                             <div className='card-wrapper'>
                                 <div className='card'>F</div>
