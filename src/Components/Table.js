@@ -60,11 +60,11 @@ export default class Table extends React.Component {
                                 <div className={`player-profile ${player.className}`} activeClassName={this.state.activePlayer === i ? 'selected' : null}>
                                     <div className='player-face'><img className='playerFace' src={player.imgUrl} alt="" /></div>
                                     <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
-                                    {/* <div className='dealer-smallblind-bigblind'>
+                                    <div className='dealer-smallblind-bigblind'>
                                         {this.state.activePlayer === i ? <div className='dealer'>D</div> : null}
                                         {i === (this.state.activePlayer + 1) % playerArray.length ? <div className='small-blind'>SB</div> : null}
                                         {i === (this.state.activePlayer + 2) % playerArray.length ? <div className='big-blind'>BB</div> : null}
-                                    </div> */}
+                                    </div>
                                     <div className='player-cards'>
                                         <div className='card hand'></div>
                                         <div className='card hand'></div>
