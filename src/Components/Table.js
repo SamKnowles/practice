@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Player from '../Util/Player'
 import Putin from '../Components/Players/Putin'
 import Borat from '../Components/Players/Borat'
 import Drake from '../Components/Players/Drake'
@@ -56,20 +57,16 @@ export default class Table extends React.Component {
                 <div className='poker-table'>
                     <div className='seating-wrapper'>
                         {playerArray && playerArray.map((player, i) => {
+                            // ternary to figure out if current iteration is on active player to assign bool
                             return (
-                                <div className={`player-profile ${player.className}`} activeClassName={this.state.activePlayer === i ? 'selected' : null}>
-                                    <div className='player-face'><img className='playerFace' src={player.imgUrl} alt="" /></div>
-                                    <div className='player-chips'><img className='chips-pic' src={chipPic} alt="" /></div>
-                                    <div className='dealer-smallblind-bigblind'>
-                                        {this.state.activePlayer === i ? <div className='dealer'>D</div> : null}
-                                        {i === (this.state.activePlayer + 1) % playerArray.length ? <div className='small-blind'>SB</div> : null}
-                                        {i === (this.state.activePlayer + 2) % playerArray.length ? <div className='big-blind'>BB</div> : null}
-                                    </div>
-                                    <div className='player-cards'>
-                                        <div className='card hand'></div>
-                                        <div className='card hand'></div>
-                                    </div>
-                                </div>
+                                <Player className={player.className}
+                                        imgUrl={player.imgUrl} 
+                                        chipPic={player.chipPic}
+                                        isActive={this.state.activePlayer === i}
+                                        isSmallBlind={i === (this.state.activePlayer + 1) % playerArray.length}
+                                        isBigBlind={i === (this.state.activePlayer + 2) % playerArray.length}
+
+                                         />
                             )
                         })}
                         <button className="btn btn-default" onClick={this.next}>Check</button>
