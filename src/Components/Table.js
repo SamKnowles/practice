@@ -62,10 +62,9 @@ export default class Table extends React.Component {
                                 <Player className={player.className}
                                         imgUrl={player.imgUrl} 
                                         chipPic={player.chipPic}
-                                        isActive={this.state.activePlayer === i}
+                                        isDealer={this.state.activePlayer === i}
                                         isSmallBlind={i === (this.state.activePlayer + 1) % playerArray.length}
                                         isBigBlind={i === (this.state.activePlayer + 2) % playerArray.length}
-
                                          />
                             )
                         })}
