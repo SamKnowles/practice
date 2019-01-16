@@ -33,6 +33,10 @@ export default class Player extends React.Component {
                     {props.isSmallBlind ? <div className='small-blind'>SB</div> : null}
                     {props.isBigBlind ? <div className='big-blind'>BB</div> : null}
                     {props.isFolded ? <div className='folded'></div> : null}
+                    {props.isRaised ? <div className='raised'></div> : null}
+                    {props.isChecked ? <div className='checked'></div> : null}
+                    {props.isCalled ? <div className='called'></div> : null}
+                    {props.isBetting ? <div className='betting'></div> : null}
                 </div>
                 <div className='player-cards'>
                     <div className='card hand'></div>
