@@ -29,6 +29,7 @@ export default class Player extends React.Component {
                 <div className='player-face'><img className='playerFace' src={props.imgUrl} alt="" /></div>
                 <div className='player-chips'><img className='chips-pic' src={props.chipPic} alt="" /></div>
                 <div className='dealer-smallblind-bigblind'>
+                    {props.isActive ? <div className='active'></div> : null}
                     {props.isDealer ? <div className='dealer'>D</div> : null}
                     {props.isSmallBlind ? <div className='small-blind'>SB</div> : null}
                     {props.isBigBlind ? <div className='big-blind'>BB</div> : null}

@@ -21,6 +21,9 @@ export default class Table extends React.Component {
         super(props)
         this.state = {
             activePlayer: 0,
+            dealer: 0,
+            smallBlind: 0,
+            bigBlind: 0,
             action: {
                 folded: false,
                 raised: false,
@@ -32,39 +35,37 @@ export default class Table extends React.Component {
     }
     next = () => {
         let activePlayer = this.state.activePlayer;
+        let dealer = this.state.dealer;
         if (activePlayer === playerArray.length - 1) {
             activePlayer = 0;
         } else {
             activePlayer++;
         }
+        if (activePlayer === playerArray.length + 1) {
+            dealer++
+        }
         this.setState({
-            activePlayer
+            activePlayer,
+            dealer
         });
-    }
-
-    fold = () => {
-        this.setState({
-            action: {
-                folded: true
-            }
-        })
     }
 
 
     render() {
+console.log(this.state.dealer);
         return (
             <div className='poker-table-wrapper'>
                 <div className='poker-table'>
                     <div className='seating-wrapper'>
                         {playerArray && playerArray.map((player, i) => {
-                            // ternary to figure out if current iteration is on active player to assign bool
                             return (
                                 <Player className={player.className}
                                         imgUrl={player.imgUrl} 
                                         chipPic={player.chipPic}
-                                        isDealer={this.state.activePlayer === i}
-                                        isSmallBlind={i === (this.state.activePlayer + 1) % playerArray.length}
-                                        isBigBlind={i === (this.state.activePlayer + 2) % playerArray.length}
+                                        isActive={this.state.activePlayer === i}
+                                        isDealer={this.state.playerArrayC === playerArray + 1 === i}
+                                        isSmallBlind={i === (this.state.dealer + 1) % playerArray.length}
+                                        isBigBlind={i === (this.state.dealer + 2) % playerArray.length}
                                          />
                             )
                         })}
