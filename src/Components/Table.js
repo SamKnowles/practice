@@ -32,10 +32,12 @@ export default class Table extends React.Component {
                 bet: false
             }
         }
+        this.playerArray = playerArray;
     }
     next = () => {
         let activePlayer = this.state.activePlayer;
         let dealer = this.state.dealer;
+        //check if next player has folded, if not, go to that player, if yes, skip to the next one and check if they have folded
         if (activePlayer === playerArray.length - 1) {
             activePlayer = 0;
         } else {
@@ -51,20 +53,17 @@ export default class Table extends React.Component {
     }
 
     fold = () => {
-        const folded = this.state.action.folded
-        
-        this.setState({
-            folded: true,
-        })
+        let activePlayer = this.playerArray[this.state.activePlayer];   
+        activePlayer.action.folded = true;
+        this.next();
     }
-
 
     render() {
         return (
             <div className='poker-table-wrapper'>
                 <div className='poker-table'>
                     <div className='seating-wrapper'>
-                        {playerArray && playerArray.map((player, i) => {
+                        {this.playerArray && this.playerArray.map((player, i) => {
                             return (
                                 <Player className={player.className}
                                         imgUrl={player.imgUrl} 
@@ -73,6 +72,7 @@ export default class Table extends React.Component {
                                         isDealer={this.state.dealer === i}
                                         isSmallBlind={i === (this.state.dealer + 1) % playerArray.length}
                                         isBigBlind={i === (this.state.dealer + 2) % playerArray.length}
+                                        isFolded={player.action.folded}
                                          />
                             )
                         })}

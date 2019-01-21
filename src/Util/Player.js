@@ -27,8 +27,9 @@ export default class Player extends React.Component {
 
         render(){
             let {props} = this
+            console.log('player props', props);
             return (
-            <div className={`player-profile ${props.className}`} activeClassName={props.isActive ? 'selected' : null}>
+            <div className={`player-profile ${props.className} ${props.isFolded === true ? 'folded' : null}`} activeClassName={props.isActive ? 'selected' : null}>
                 <div className='player-face'><img className='playerFace' src={props.imgUrl} alt="" /></div>
                 <div className='player-chips'><img className='chips-pic' src={props.chipPic} alt="" /></div>
                 <div className='dealer-smallblind-bigblind'>

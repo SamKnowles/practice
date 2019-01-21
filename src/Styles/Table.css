@@ -17,6 +17,10 @@
   margin: -5%;
 }
 
+.player-profile.folded {
+  border: 10px solid orange;
+}
+
 .is-inactive {
   margin: -50%;
 }
