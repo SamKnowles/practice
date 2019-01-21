@@ -75,3 +75,7 @@
     align-items: center;
     font-size: 15px;
   }
+
+.folded {
+  background-color: black;
+}

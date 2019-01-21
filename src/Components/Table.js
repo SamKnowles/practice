@@ -41,8 +41,8 @@ export default class Table extends React.Component {
         } else {
             activePlayer++;
         }
-        if (activePlayer === playerArray.length + 1) {
-            dealer++
+        if (activePlayer === playerArray.length - 2) {
+            dealer++;
         }
         this.setState({
             activePlayer,
@@ -50,9 +50,16 @@ export default class Table extends React.Component {
         });
     }
 
+    fold = () => {
+        const folded = this.state.action.folded
+        
+        this.setState({
+            folded: true,
+        })
+    }
+
 
     render() {
-console.log(this.state.dealer);
         return (
             <div className='poker-table-wrapper'>
                 <div className='poker-table'>
@@ -63,14 +70,14 @@ console.log(this.state.dealer);
                                         imgUrl={player.imgUrl} 
                                         chipPic={player.chipPic}
                                         isActive={this.state.activePlayer === i}
-                                        isDealer={this.state.playerArrayC === playerArray + 1 === i}
+                                        isDealer={this.state.dealer === i}
                                         isSmallBlind={i === (this.state.dealer + 1) % playerArray.length}
                                         isBigBlind={i === (this.state.dealer + 2) % playerArray.length}
                                          />
                             )
                         })}
                         <button className="btn btn-default" onClick={this.next}>Check</button>
-                        <button className="btn btn-default" onClick={this.next}>Fold</button>
+                        <button className={"btn btn-default"} onClick={this.fold}>Fold</button>
                         <div className='mid-section-top'>
                             <div className='card-wrapper'>
                                 <div className='card'>F</div>

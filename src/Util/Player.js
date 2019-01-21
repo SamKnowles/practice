@@ -6,6 +6,9 @@ export default class Player extends React.Component {
             this.state = {
                 name : '',
                 activePlayer : false,
+                dealer: false,
+                smallBlind: false,
+                bigBlind: false,
                 chipCount : 200,
                 position : '',
                 hand : [{suit: '', name: ''}],
