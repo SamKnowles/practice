@@ -36,25 +36,39 @@ export default class Table extends React.Component {
     }
     next = () => {
         let activePlayer = this.state.activePlayer;
-        let dealer = this.state.dealer;
-        //check if next player has folded, if not, go to that player, if yes, skip to the next one and check if they have folded
+        let foldedPlayer = this.playerArray[this.state.activePlayer]
+
         if (activePlayer === playerArray.length - 1) {
             activePlayer = 0;
         } else {
             activePlayer++;
         }
-        if (activePlayer === playerArray.length - 2) {
-            dealer++;
+        for (let i = activePlayer; i < playerArray.length; i++) {
+            console.log("activePlayer is currently", i);
+            console.log("folded " + !playerArray[i].action.folded)
+            if (!playerArray[i].action.folded) {
+                console.log(activePlayer)
+                activePlayer = i;
+                break;
+            } else if (playerArray[i].action.folded && i !== playerArray.length - 1) {
+                i++;
+            } else if (playerArray[i].action.folded && i === playerArray.length - 1) {
+                i = 0;
+            }
+            console.log(playerArray[i].name);
         }
         this.setState({
             activePlayer,
-            dealer
         });
+        // console.log(foldedPlayer);
     }
 
     fold = () => {
-        let activePlayer = this.playerArray[this.state.activePlayer];   
+        let activePlayer = this.playerArray[this.state.activePlayer];
         activePlayer.action.folded = true;
+        this.setState ({
+            activePlayer,
+        })
         this.next();
     }
 
@@ -66,14 +80,14 @@ export default class Table extends React.Component {
                         {this.playerArray && this.playerArray.map((player, i) => {
                             return (
                                 <Player className={player.className}
-                                        imgUrl={player.imgUrl} 
-                                        chipPic={player.chipPic}
-                                        isActive={this.state.activePlayer === i}
-                                        isDealer={this.state.dealer === i}
-                                        isSmallBlind={i === (this.state.dealer + 1) % playerArray.length}
-                                        isBigBlind={i === (this.state.dealer + 2) % playerArray.length}
-                                        isFolded={player.action.folded}
-                                         />
+                                    imgUrl={player.imgUrl}
+                                    chipPic={player.chipPic}
+                                    isActive={this.state.activePlayer === i}
+                                    isDealer={this.state.dealer === i}
+                                    isSmallBlind={i === (this.state.dealer + 1) % playerArray.length}
+                                    isBigBlind={i === (this.state.dealer + 2) % playerArray.length}
+                                    isFolded={player.action.folded}
+                                />
                             )
                         })}
                         <button className="btn btn-default" onClick={this.next}>Check</button>
