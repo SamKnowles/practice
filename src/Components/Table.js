@@ -50,10 +50,13 @@ export default class Table extends React.Component {
                 console.log(activePlayer)
                 activePlayer = i;
                 break;
-            } else if (playerArray[i].action.folded && i !== playerArray.length - 1) {
+            // } else if (playerArray[i].action.folded && i !== playerArray.length - 1) {
+            //     activePlayer++;
+            // } else if (playerArray[i].action.folded && i === playerArray.length - 1) {
+            //     playerArray[i] = activePlayer;
+            // }
+            } else {
                 activePlayer++;
-            } else if (playerArray[i].action.folded && i === playerArray.length - 1) {
-                playerArray[i] = activePlayer;
             }
         }
         this.setState({
@@ -77,6 +80,7 @@ export default class Table extends React.Component {
                 <div className='poker-table'>
                     <div className='seating-wrapper'>
                         {this.playerArray && this.playerArray.map((player, i) => {
+                            console.log(player)
                             return (
                                 <Player className={player.className}
                                     imgUrl={player.imgUrl}
