@@ -51,7 +51,7 @@ export default class Table extends React.Component {
                 activePlayer = i;
                 break;
             } else if (playerArray[i].action.folded && i !== playerArray.length - 1) {
-                i++;
+                activePlayer++;
             } else if (playerArray[i].action.folded && i === playerArray.length - 1) {
                 i = 0;
             }
