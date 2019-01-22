@@ -60,7 +60,6 @@ export default class Table extends React.Component {
         this.setState({
             activePlayer,
         });
-        // console.log(foldedPlayer);
     }
 
     fold = () => {
