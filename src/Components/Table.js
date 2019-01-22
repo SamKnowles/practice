@@ -36,13 +36,13 @@ export default class Table extends React.Component {
     }
     next = () => {
         let activePlayer = this.state.activePlayer;
-        let foldedPlayer = this.playerArray[this.state.activePlayer]
-
+        
         if (activePlayer === playerArray.length - 1) {
             activePlayer = 0;
         } else {
             activePlayer++;
         }
+        let foldedPlayer = this.playerArray[this.state.activePlayer]
         for (let i = activePlayer; i < playerArray.length; i++) {
             console.log("activePlayer is currently", i);
             console.log("folded " + !playerArray[i].action.folded)
@@ -53,13 +53,12 @@ export default class Table extends React.Component {
             } else if (playerArray[i].action.folded && i !== playerArray.length - 1) {
                 activePlayer++;
             } else if (playerArray[i].action.folded && i === playerArray.length - 1) {
-                activePlayer = 0;
+                playerArray[i] = activePlayer;
             }
-            console.log(playerArray[i].name);
         }
         this.setState({
             activePlayer,
-        });
+        }); 
     }
 
     fold = () => {
@@ -67,6 +66,7 @@ export default class Table extends React.Component {
         activePlayer.action.folded = true;
         this.setState ({
             activePlayer,
+
         })
         this.next();
     }
