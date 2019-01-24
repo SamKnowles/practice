@@ -40,7 +40,7 @@ export default class Table extends React.Component {
         if (activePlayer === playerArray.length - 1) {
             activePlayer = 0;
         } else {
-            activePlayer++;
+            activePlayer
         }
         let foldedPlayer = this.playerArray[this.state.activePlayer]
         for (let i = activePlayer; i < playerArray.length; i++) {
