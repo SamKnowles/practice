@@ -36,9 +36,9 @@ export default class Table extends React.Component {
     }
     next = () => {
         let activePlayer = this.state.activePlayer;
-        
+
         if (activePlayer === playerArray.length - 1) {
-            activePlayer = 0;
+            activePlayer === playerArray[i];
         } else {
             activePlayer
         }
@@ -52,11 +52,11 @@ export default class Table extends React.Component {
                 activePlayer = i;
                 console.log('hit 1')
                 break;
-            // } else if (playerArray[i].action.folded && i !== playerArray.length - 1) {
-            //     activePlayer++;
-            // } else if (playerArray[i].action.folded && i === playerArray.length - 1) {
-            //     playerArray[i] = activePlayer;
-            
+                // } else if (playerArray[i].action.folded && i !== playerArray.length - 1) {
+                //     activePlayer++;
+                // } else if (playerArray[i].action.folded && i === playerArray.length - 1) {
+                //     playerArray[i] = activePlayer;
+
             } else {
                 console.log('hit 2')
                 activePlayer++;
@@ -64,13 +64,13 @@ export default class Table extends React.Component {
         }
         this.setState({
             activePlayer,
-        }); 
+        });
     }
 
     fold = () => {
         let activePlayer = this.playerArray[this.state.activePlayer];
         activePlayer.action.folded = true;
-        this.setState ({
+        this.setState({
             activePlayer,
 
         })
@@ -83,7 +83,7 @@ export default class Table extends React.Component {
                 <div className='poker-table'>
                     <div className='seating-wrapper'>
                         {this.playerArray && this.playerArray.map((player, i) => {
-                            {/* console.log(player) */}
+                            {/* console.log(player) */ }
                             return (
                                 <Player className={player.className}
                                     imgUrl={player.imgUrl}
